@@ -14,11 +14,11 @@ on:
   workflow_dispatch:
       inputs:
         image:
-        type: string
-      environment:
-        type: string
-      run_id:
-        type: string
+          type: string
+        environment:
+          type: string
+        run_id:
+          type: string
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

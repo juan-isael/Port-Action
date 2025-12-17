@@ -17,8 +17,8 @@ on:
           type: string
         environment:
           type: string
-        # run_id:
-        #   type: string
+        run_id:
+          type: string
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -37,7 +37,7 @@ jobs:
         clientId: ${{ secrets.PORT_CLIENT_ID }}
         clientSecret: ${{ secrets.PORT_SECRET }}
         operation: PATCH_RUN
-        # runId: ${{ inputs.run_id }}
+        runId: ${{ inputs.run_id }}
         logMessage: |
            Starting deployment of image "${{ inputs.image }}" to environment "${{ inputs.environment }}" 😎
            
